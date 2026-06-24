@@ -11,6 +11,7 @@ load_dotenv()
 import os
 from datetime import datetime
 
+
 def insert_coin_info(curser, coin):
 	curser.execute("""
 					INSERT INTO coins (
@@ -179,7 +180,7 @@ try:
 	with urllib.request.urlopen(request, context=context) as response:
 		data = json.load(response)
 	logging.info(f"retrieved {len(data['data'])} coins from json")
-	print(f"retrieved {len(data['data'])} coins")
+	print(f"retrieved {len(data['data'])}  coins")
 except Exception as e:
 	print(e)
 	logging.error(f"API error: {e}")

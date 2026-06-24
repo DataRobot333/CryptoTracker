@@ -27,13 +27,13 @@ The goal is to build a complete end-to-end data analytics platform using real-wo
 
 ## Project Roadmap
 
-Raspberry Pi
-→ Data Collection
-→ PostgreSQL
-→ SQL Analytics
-→ Dashboard
-→ Trading Signals
-→ Telegram Alerts
+Raspberry Pi    
+→ Data Collection     
+→ PostgreSQL     
+→ SQL Analytics     
+→ Dashboard      
+→ Trading Signals     
+→ Telegram Alerts    
 
 ## Installation
 
