@@ -12,7 +12,6 @@ GROUP BY coin_id, DATE(collection_time)
 
 SELECT
     ds.coin_id,
-    ds.trade_day,
     open_ms.price_usd as open_price,
     ds.high_price,
     ds.low_price,
@@ -28,4 +27,15 @@ JOIN market_snapshots close_ms
     on close_ms.coin_id = ds.coin_id
     and close_ms.collection_time = ds.last_time
 
-ORDER BY ds.trade_day DESC, ds.coin_id;
+ORDER BY ds.trade_day DESC, ds.coin_id;SELECT
+    c.name,
+    DATE(ms.collection_time),
+    MAX(ms.collection_time)
+    
+
+from market_snapshots ms
+join coins c
+    on c.coin_id = ms.coin_id
+GROUP BY c.name, date(ms.collection_time)
+
+;

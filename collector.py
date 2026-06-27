@@ -186,10 +186,6 @@ except Exception as e:
 	logging.info("=========Collection Closed=========")
 	exit()
 
-# import pprint
-# pprint.pprint(data["data"][0])
-
-# print(len(data['data']))
 
 try:
 	for coin in data["data"]:
