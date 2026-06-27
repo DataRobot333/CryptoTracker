@@ -6,19 +6,20 @@ This project is an automated cryptocurrency data pipeline running on a Raspberry
 
 ## Data Flow
 
-CoinMarketCap API   
-↓  
-Python Collector (collector.py)  ==> completed
-↓  
-Environment Variables (.env)  ==> completed  
-↓  
-PostgreSQL Database ==> completed (evolve as project progress)
-↓  
-SQL Queries / Analytics Layer ==> in progress
-↓  
-Dashboard (future: Grafana / Metabase) ==> future plan
-↓  
-Alert System (future: Telegram Bot) ==> future plan
+CoinMarketCap API      
+↓       
+Python Collector (collector.py)  ==> completed    
+↓     
+Environment Variables (.env)  ==> completed      
+↓      
+PostgreSQL Database ==> completed (evolve as project progress)      
+↓      
+SQL Queries / Analytics Layer ==> in progress     
+↓      
+Dashboard (future: Grafana / Metabase) ==> future plan     
+↓      
+Alert System (future: Telegram Bot) ==> future plan    
+   
   
 ## Components
 
