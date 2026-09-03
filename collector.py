@@ -161,7 +161,7 @@ except Exception as e:
 params = urllib.parse.urlencode(
     {
         "start": "1",
-        "limit": "400",
+        "limit": "700",
         "convert": "USD",
     })
 
@@ -191,8 +191,9 @@ try:
 	for coin in data["data"]:
 		rank = coin['cmc_rank']
 		insert_coin_info(cur,coin)
+		insert_full_snapshot(cur,coin,SOURCE_ID)
 		
-		if rank <= 100:
+		'''if rank <= 100:
 			insert_full_snapshot(cur,coin,SOURCE_ID)
 
 		elif rank <= 200:
@@ -200,7 +201,8 @@ try:
 
 		elif rank <= 400:
 			insert_light_snapshot(cur,coin,SOURCE_ID)
-		
+
+		'''
 
 		#insert market_snapshots here
 		

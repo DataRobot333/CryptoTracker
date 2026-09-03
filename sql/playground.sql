@@ -1,3 +1,1 @@
-select *
-from market_snapshots
-;  
+select count(*) from market_snapshots;
